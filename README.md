@@ -20,9 +20,15 @@ Depois são plotados os valores em um gráfico de barras para melhor visualizaç
 Web scrapper + official presidential appointments data analysis
 
 This code has the intention of extracting data from Brazilian official presidential appointments from 2019/01/01 to 2019/04/19, those value can be changed if you change the 'diainicio' e 'diafinal' variables.
+
 The webpage which I used as basis is 'https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/agenda-do-presidente-da-republica/', if the address change you have to alter 'url' variable inside the loop.
+
 The Web scrapper has been coded with the determined structure of that webpage, it's a highly customized project, if the page's structure change it'll cease to function properly.
+
 The algorithm extract dates, schedule and description data, stored in list type variables 'data', 'horario', 'descricao'.
+
 After that I discovered that some days couldn't be extracted because of changes in page's structure, estimated values are added for every missing day.
+
 The pandas library is used for the data wrangling until the calculation of three variables: Average 7-day Week, Average 6-day Week, Average 5-day Week.
+
 And for the finish the last variables are plotted into a bar chart to improve graphic visualization.
